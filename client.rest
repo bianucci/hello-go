@@ -1,5 +1,25 @@
+### Register new user
+POST http://localhost:8080/api/register
+content-type:application/json
+
+{
+    "username": "user@example.com",
+    "password": "mypass"
+}
+
+### Login new user
+POST http://localhost:8080/api/login
+content-type:application/json
+
+{
+    "username": "user@example.com",
+    "password": "mypass"
+}
+
 ### Get all
 GET http://localhost:8080/api/albums
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NjUzMDQ3MjMsInVzZXJuYW1lIjoidXNlckBleGFtcGxlLmNvbSJ9.LhfVBK-4BAtvdFYa6Ftdzw9pvJ4dapqr4h2MZVWI3iI
+
 
 ### Add one
 POST http://localhost:8080/api/albums
