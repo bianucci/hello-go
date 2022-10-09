@@ -1,0 +1,21 @@
+### Get all
+GET http://localhost:8080/api/albums
+
+### Add one
+POST http://localhost:8080/api/albums
+content-type:application/json
+
+{
+    "id": "mynewalbum",
+    "title": "a new album",
+    "artist": "that great singer",
+    "price": 123.45
+}
+
+### Get new one
+GET http://localhost:8080/api/albums/mynewalbum
+content-type:application/json
+
+### Get non existing
+GET http://localhost:8080/api/albums/non-existing
+content-type:application/json
